@@ -1,0 +1,294 @@
+<!-- Italian Family Restaurant Landing Page - Cozy, Family Friendly Theme -->
+
+<!-- Restaurant Name: Mamma’s Kitchen -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mamma’s Kitchen — Cozy Italian Family Restaurant</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --accent: #C0392B; }
+    body { font-family: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+    /* small helpers for testimonial dots */
+    .dot { width:10px; height:10px; border-radius:9999px; display:inline-block; margin:0 6px; }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Header -->
+
+  <header class="fixed w-full z-50 bg-white/70 backdrop-blur-md shadow-sm">
+    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-full bg-[var(--accent)] flex items-center justify-center text-white font-bold">MK</div>
+        <div>
+          <h1 class="text-xl font-extrabold" style="color:var(--accent)">Mamma’s Kitchen</h1>
+          <p class="text-xs text-gray-500">Taste of Home — Since 2025</p>
+        </div>
+      </div>
+
+```
+  <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+    <a href="#home" class="hover:text-[var(--accent)]">Home</a>
+    <a href="#menu" class="hover:text-[var(--accent)]">Menu</a>
+    <a href="#about" class="hover:text-[var(--accent)]">About</a>
+    <a href="#testimonials" class="hover:text-[var(--accent)]">Testimonials</a>
+    <a href="#contact" class="hover:text-[var(--accent)]">Contact</a>
+  </nav>
+
+  <div class="flex items-center gap-3">
+    <a href="#contact" class="hidden md:inline-block px-4 py-2 rounded-full font-semibold text-white" style="background:var(--accent)">Book a Table</a>
+    <button id="menuBtn" class="md:hidden text-3xl text-[var(--accent)]">☰</button>
+  </div>
+</div>
+
+<!-- Mobile Slide Menu -->
+<div id="mobileMenu" class="fixed top-0 left-0 h-full w-72 bg-white p-6 transform -translate-x-full transition-transform duration-300 shadow-lg md:hidden">
+  <div class="flex justify-between items-center mb-6">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-full bg-[var(--accent)] flex items-center justify-center text-white font-bold">MK</div>
+      <div>
+        <h3 class="font-bold" style="color:var(--accent)">Mamma’s Kitchen</h3>
+        <p class="text-xs text-gray-500">Taste of Home</p>
+      </div>
+    </div>
+    <button id="closeMenu" class="text-2xl">✕</button>
+  </div>
+  <nav class="flex flex-col gap-4 text-lg">
+    <a href="#home" class="py-2 border-b">Home</a>
+    <a href="#menu" class="py-2 border-b">Menu</a>
+    <a href="#about" class="py-2 border-b">About</a>
+    <a href="#testimonials" class="py-2 border-b">Testimonials</a>
+    <a href="#contact" class="py-2">Contact</a>
+  </nav>
+  <div class="mt-6">
+    <a href="https://wa.me/919999999999" target="_blank" class="inline-block w-full text-center px-4 py-2 rounded-full font-semibold text-white" style="background:var(--accent)">Order on WhatsApp</a>
+  </div>
+</div>
+```
+
+  </header>
+
+  <!-- Hero -->
+
+  <section id="home" class="pt-28 bg-[url('https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=1400&q=80')] bg-cover bg-center">
+    <div class="bg-black/40">
+      <div class="max-w-6xl mx-auto px-6 py-28 text-center text-white">
+        <h2 class="text-4xl md:text-6xl font-extrabold leading-tight">Welcome to <span style="color:var(--accent)">Mamma’s Kitchen</span></h2>
+        <p class="mt-4 text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">Home-cooked flavors, family recipes, and the warmest hugs in every bite. Join us for pizza, pasta and love.</p>
+        <div class="mt-8 flex justify-center gap-4">
+          <a href="#menu" class="px-6 py-3 rounded-full font-semibold text-[var(--accent)] bg-white">View Menu</a>
+          <a href="https://wa.me/919999999999" target="_blank" class="px-6 py-3 rounded-full font-semibold text-white" style="background:var(--accent)">Order on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+
+  <section id="menu" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h3 class="text-3xl font-extrabold" style="color:var(--accent)">Our Menu</h3>
+        <p class="text-gray-600 mt-2">Classic family favorites — pizzas, pastas & delightful desserts.</p>
+      </div>
+
+```
+  <div class="grid md:grid-cols-3 gap-8">
+    <!-- Pizza Card -->
+    <div class="bg-white border rounded-xl p-6 shadow-sm">
+      <img src="https://images.unsplash.com/photo-1601924582971-3b6f7b3fae6a?auto=format&fit=crop&w=800&q=80" alt="Margherita Pizza" class="w-full h-44 object-cover rounded-lg mb-4">
+      <h4 class="text-xl font-bold">Margherita Pizza</h4>
+      <p class="text-gray-600 mt-1">Fresh mozzarella, basil & our tangy tomato sauce.</p>
+      <div class="mt-4 flex items-center justify-between">
+        <div class="text-lg font-semibold">₹299</div>
+        <a href="https://wa.me/919999999999?text=I%20want%20to%20order%20Margherita%20Pizza" target="_blank" class="px-3 py-2 rounded-md text-white" style="background:var(--accent)">Order</a>
+      </div>
+    </div>
+
+    <!-- Pasta Card -->
+    <div class="bg-white border rounded-xl p-6 shadow-sm">
+      <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?auto=format&fit=crop&w=800&q=80" alt="Pasta" class="w-full h-44 object-cover rounded-lg mb-4">
+      <h4 class="text-xl font-bold">Creamy Alfredo Pasta</h4>
+      <p class="text-gray-600 mt-1">Silky sauce, parmesan & love.</p>
+      <div class="mt-4 flex items-center justify-between">
+        <div class="text-lg font-semibold">₹249</div>
+        <a href="https://wa.me/919999999999?text=I%20want%20to%20order%20Creamy%20Alfredo%20Pasta" target="_blank" class="px-3 py-2 rounded-md text-white" style="background:var(--accent)">Order</a>
+      </div>
+    </div>
+
+    <!-- Dessert Card -->
+    <div class="bg-white border rounded-xl p-6 shadow-sm">
+      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80" alt="Tiramisu" class="w-full h-44 object-cover rounded-lg mb-4">
+      <h4 class="text-xl font-bold">Classic Tiramisu</h4>
+      <p class="text-gray-600 mt-1">Ladyfingers, espresso & mascarpone.</p>
+      <div class="mt-4 flex items-center justify-between">
+        <div class="text-lg font-semibold">₹179</div>
+        <a href="https://wa.me/919999999999?text=I%20want%20to%20order%20Tiramisu" target="_blank" class="px-3 py-2 rounded-md text-white" style="background:var(--accent)">Order</a>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+  </section>
+
+  <!-- About -->
+
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h3 class="text-3xl font-extrabold" style="color:var(--accent)">About Mamma’s Kitchen</h3>
+        <p class="text-gray-600 mt-4">At Mamma’s Kitchen we believe food is love. Our recipes are passed through generations and cooked with care. We focus on fresh ingredients, slow-simmered sauces and a welcoming family atmosphere.</p>
+        <ul class="mt-4 text-gray-600 space-y-2">
+          <li>• Family recipes & authentic flavors</li>
+          <li>• Freshly made dough & house sauces</li>
+          <li>• Cozy dining & home-style service</li>
+        </ul>
+        <div class="mt-6">
+          <a href="#menu" class="px-4 py-2 rounded-full font-semibold text-white" style="background:var(--accent)">See Menu</a>
+        </div>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=80" alt="Family dinner" class="rounded-xl shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+
+  <section id="testimonials" class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-extrabold" style="color:var(--accent)">What Our Guests Say</h3>
+      <div id="testi" class="mt-8 bg-white p-6 rounded-xl shadow-sm">
+        <p id="testiText" class="text-gray-700 italic">“The best family dinner spot — cozy and delicious. My kids loved the pizza!”</p>
+        <p id="testiAuthor" class="mt-4 font-bold text-[var(--accent)]">— Priya R.</p>
+      </div>
+      <div class="mt-6">
+        <span id="dots" class="inline-flex items-center"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-3xl font-extrabold text-center" style="color:var(--accent)">Our Moments</h3>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" class="rounded-xl shadow-sm">
+        <img src="https://images.unsplash.com/photo-1541544180-fbd3d4a1f0a3?auto=format&fit=crop&w=800&q=80" class="rounded-xl shadow-sm">
+        <img src="https://images.unsplash.com/photo-1523978591478-c753949ff840?auto=format&fit=crop&w=800&q=80" class="rounded-xl shadow-sm">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+
+  <section id="contact" class="py-20 bg-gray-50 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h3 class="text-3xl font-extrabold" style="color:var(--accent)">Contact & Orders</h3>
+      <p class="text-gray-600 mt-3">Call or message us on WhatsApp to place an order or reserve a table.</p>
+      <div class="mt-6 flex justify-center gap-4">
+        <a href="tel:+919876543210" class="px-5 py-3 rounded-full border font-semibold">+91 98765 43210</a>
+        <a href="https://wa.me/919876543210" target="_blank" class="px-5 py-3 rounded-full font-semibold text-white" style="background:var(--accent)">Message on WhatsApp</a>
+      </div>
+      <p class="text-gray-500 mt-4">Address: 123 Food Lane, Your City</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="bg-white border-t py-6">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-gray-600">© 2025 Mamma’s Kitchen — All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="#" class="text-gray-600 hover:text-[var(--accent)]">Instagram</a>
+        <a href="#" class="text-gray-600 hover:text-[var(--accent)]">Facebook</a>
+        <a href="#" class="text-gray-600 hover:text-[var(--accent)]">Google</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+
+  <script>
+    // Mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMenu = document.getElementById('closeMenu');
+    menuBtn.addEventListener('click', () => { mobileMenu.style.transform = 'translateX(0)'; });
+    closeMenu.addEventListener('click', () => { mobileMenu.style.transform = 'translateX(-100%)'; });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href.startsWith('#')) {
+          e.preventDefault();
+          const el = document.querySelector(href);
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          // close mobile menu if open
+          if (mobileMenu.style.transform === 'translateX(0)') mobileMenu.style.transform = 'translateX(-100%)';
+        }
+      });
+    });
+
+    // Testimonials slider (simple)
+    const testimonials = [
+      { text: '“The best family dinner spot — cozy and delicious. My kids loved the pizza!”', author: 'Priya R.' },
+      { text: '“Authentic flavors! Mamma’s Kitchen feels like home.”', author: 'Anand G.' },
+      { text: '“Friendly staff and great portions. Highly recommended.”', author: 'Sonal D.' }
+    ];
+    let tIndex = 0;
+    const testiText = document.getElementById('testiText');
+    const testiAuthor = document.getElementById('testiAuthor');
+    const dotsWrap = document.getElementById('dots');
+
+    function renderDots() {
+      dotsWrap.innerHTML = '';
+      testimonials.forEach((_, i) => {
+        const dot = document.createElement('span');
+        dot.className = 'dot';
+        dot.style.background = i === tIndex ? 'var(--accent)' : '#E5E7EB';
+        dot.addEventListener('click', () => { tIndex = i; updateTesti(); });
+        dotsWrap.appendChild(dot);
+      });
+    }
+
+    function updateTesti() {
+      testiText.textContent = testimonials[tIndex].text;
+      testiAuthor.textContent = '— ' + testimonials[tIndex].author;
+      renderDots();
+    }
+
+    function autoSlide() {
+      tIndex = (tIndex + 1) % testimonials.length;
+      updateTesti();
+    }
+
+    renderDots();
+    updateTesti();
+    setInterval(autoSlide, 4500);
+
+    // Simple reveal on scroll for elements with data-reveal
+    const observers = document.querySelectorAll('[data-reveal]');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('opacity-100', 'translate-y-0');
+      });
+    }, { threshold: 0.2 });
+    observers.forEach(o => {
+      o.classList.add('opacity-0', 'translate-y-6', 'transition-all', 'duration-700');
+      obs.observe(o);
+    });
+  </script>
+
+</body>
+</html>
